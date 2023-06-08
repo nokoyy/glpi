@@ -1,8 +1,8 @@
 # GLPI - Debian 11
 
 
- Après l'installation de Debian sur la machine on cherhce à créer un nouvel utilisateur, pour se faire on se rend dans "Paramètres" -> "Utilisateurs" puis
-"Ajouter un nouvel utilisateur" auquel on donnera la permission Administrateur. Puis on change d'utilisateur pour se connecter avec ce dernier.
+ Après l'installation de Debian sur la machine on cherche à créer un nouvel utilisateur, pour se faire on se rend dans "Paramètres" -> "Utilisateurs" puis
+"Ajouter un nouvel utilisateur" auquel on donnera la permission "Administrateur". Puis on change d'utilisateur pour se connecter avec ce dernier.
 
 On va commencer à taper les lignes de code en root donc on tape la commande :
 ```
