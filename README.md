@@ -1,5 +1,5 @@
-# GLPI 
-## De la création et configuaration de la machine à l'installation et configuration du serveur GLPI
+# GLPI - Debian 11
+
 
  Après l'installation de Debian sur la machine on cherhce à créer un nouvel utilisateur, pour se faire on se rend dans "Paramètres" -> "Utilisateurs" puis
 "Ajouter un nouvel utilisateur" auquel on donnera la permission Administrateur. Puis on change d'utilisateur pour se connecter avec ce dernier.
