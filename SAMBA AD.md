@@ -205,6 +205,7 @@ Après redémarrage du serveur, tous les services doivent être lancés automati
 host -t SRV _ldap._tcp.infotrucs.lan
 ```
 "SI UNE ERREUR DU STYLE (NXDOMAIN) APPARAIT REGARDER LES DNS ET ADDRESSE IP SI ELLES SONT CORRECT"
+
 -Cette commande doit afficher :
 
 _ldap._tcp.infotrucs.lan has SRV record 0 100 389 dcsrv.infotrucs.lan.
@@ -218,9 +219,11 @@ host -t A dcsrv.infotrucs.lan
 dcsrv.infotrucs.lan has address 192.168.0.100
 
 Le DNS est fonctionnel !
+
 Création de la zone de recherche inversée
 
 Créer la zone DNS de recherche inversée (PTR) :
+
 A CHANGER SUIVANT LES IP
 ```
 samba-tool dns zonecreate 192.168.0.100 0.168.192.in-addr.arpa -U administrator
@@ -256,5 +259,6 @@ On va maintenant passer sur notre client Windows 10 afin de configurer son rése
 ## Configuration réseau sur machine win10
 
 ![image](https://github.com/nokoyy/glpi/assets/135959386/cb9851b1-3c3c-4b2d-be0a-c1a32ae0c322)
+
  ( A CHANGER SUIVANT L'ADDRESSE IP, DNS ETC MAIS PRENDRE CETTE PHOTO COMME EXEMPLE)
 
