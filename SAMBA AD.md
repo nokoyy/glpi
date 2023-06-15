@@ -45,6 +45,7 @@ gateway 192.168.0.1
 
 dns-nameservers 127.0.0.1
 
+file:///home/admin/Bureau/interfaces.png
 
 ## Definir le hostname
 
