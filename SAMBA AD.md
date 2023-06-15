@@ -45,6 +45,8 @@ gateway 192.168.0.1
 
 dns-nameservers 127.0.0.1
 
+![interfaces](https://github.com/nokoyy/glpi/assets/135959386/b5748323-be15-4bd4-a783-e501a231a961)
+
 [config graphique](https://github.com/nokoyy/glpi/assets/135959386/65c72bde-2515-43fc-b6e3-7af79a4ed512)
 
 ## Définir le hostname
@@ -65,9 +67,10 @@ Fichier hosts
 nano /etc/hosts
 ```
 127.0.0.1 localhost localhost.localdomain
+
 192.168.0.100 dcsrv.infotrucs.lan dcsrv
 
--Vous ne devez pas mettre la boucle locale 127.0.0.1 devant le vrai hostname du serveur, respectez bien l’exemple.
+![hosts](https://github.com/nokoyy/glpi/assets/135959386/49fa7ff1-322e-40f9-9193-4220b8969af7)
 
 N’hésitez pas à redémarrer après la configuration du réseau.
 Fichier resolv.conf
@@ -79,7 +82,9 @@ nano /etc/resolv.conf
 -Et entrez :
 
 domain infotrucs.lan
+
 search infotrucs.lan
+
 nameserver 127.0.0.1
 
 ## On passe en page suivante à l’installation de SAMBA.
