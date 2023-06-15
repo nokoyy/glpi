@@ -53,6 +53,8 @@ Passons maintenant à l’installation de GLPI !
 Placez vous dans le répertoire de votre choix (moi perso c’est dans le dossier temporaire /tmp) et téléchargez la dernière version disponible de GLPI sur Github :
 ```
 cd /tmp
+```
+```
 wget https://github.com/glpi-project/glpi/releases/download/10.0.7/glpi-10.0.7.tgz
 ```
 
