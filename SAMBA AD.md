@@ -188,3 +188,67 @@ infotrucs.lan = INFOTRUCS.LAN
 
 ->Enregistrez le fichier.
 
+-Pour automatiser le démarrage des services au démarrage du système :
+```
+systemctl unmask samba-ad-dc
+```
+-Puis :
+```
+systemctl enable samba-ad-dc
+```
+–>Après ces nombreuses manipulations, redémarrons le serveur :
+
+reboot
+
+Après redémarrage du serveur, tous les services doivent être lancés automatiquement. Maintenant, on va tester le bon fonctionnement du serveur DNS interne de Samba. Pour cela on va traduire un enregistrement de type SRV. Bien sûr, adaptez avec votre nom de domaine :
+```
+host -t SRV _ldap._tcp.infotrucs.lan
+```
+"SI UNE ERREUR DU STYLE (NXDOMAIN) APPARAIT REGARDER LES DNS ET ADDRESSE IP SI ELLES SONT CORRECT"
+-Cette commande doit afficher :
+
+_ldap._tcp.infotrucs.lan has SRV record 0 100 389 dcsrv.infotrucs.lan.
+
+-Aller, testons un enregistrement de type A :
+```
+host -t A dcsrv.infotrucs.lan
+```
+-Affichera :
+
+dcsrv.infotrucs.lan has address 192.168.0.100
+
+Le DNS est fonctionnel !
+Création de la zone de recherche inversée
+
+Créer la zone DNS de recherche inversée (PTR) :
+A CHANGER SUIVANT LES IP
+```
+samba-tool dns zonecreate 192.168.0.100 0.168.192.in-addr.arpa -U administrator
+```
+
+->Le mot de passe choisi lors de la promotion du DC est alors demandé. (ici P@ssword01)
+
+-Dans la partie 0.168.192.in-addr.arpa vous devez entrer la partie réseau de l’IP du serveur du SAMBA mais de façon inversée. Ici le serveur est sur le réseau 192.168.0 donc inversé ça donne 0.168.192.
+
+-A la suite de cette commande doit s’afficher :
+
+Zone 0.168.192.in-addr.arpa created successfully
+
+
+Juste un petit test de plus pour être sûr que l’authentification Kerberos fonctionne.
+
+-Entrez la commande suivante et le mot de passe du compte administrator devrait être demandé :
+```
+kinit administrator
+```
+-Devrait alors afficher :
+
+Password for administrator@INFOTRUCS.LAN:
+
+-Entrez alors votre mot de passe (P@ssword01) puis s’affichera quelque chose dans le genre :
+
+Warning: Your password will expire in 41 days on lun. 06 mai 2019 23:41:54 CEST
+
+–>L’authentification fonctionne.
+
+On va maintenant passer sur notre client Windows 10 afin de configurer son réseau, installer les outils RSAT et l’intégrer au domaine. Ce sera donc un poste qui permettra l’administration du serveur avec des outils graphiques.
