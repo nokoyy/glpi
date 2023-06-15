@@ -261,4 +261,23 @@ On va maintenant passer sur notre client Windows 10 afin de configurer son rése
 ![image](https://github.com/nokoyy/glpi/assets/135959386/cb9851b1-3c3c-4b2d-be0a-c1a32ae0c322)
 
  ( A CHANGER SUIVANT L'ADDRESSE IP, DNS ETC MAIS PRENDRE CETTE PHOTO COMME EXEMPLE)
+ 
+ ## Téléchargement RSAT
+
+![image](https://github.com/nokoyy/glpi/assets/135959386/d8622364-de02-4d6d-989e-a5a2e66e4531)
+
+![image](https://github.com/nokoyy/glpi/assets/135959386/bf8319a2-6011-4e45-a816-7b95dc233ca2)
+
+![image](https://github.com/nokoyy/glpi/assets/135959386/0fe313e5-a207-47f2-8b45-0f585bfe8754)
+
+
+## INTEGRER LE CLIENT AU DOMAINE
+
+![image](https://github.com/nokoyy/glpi/assets/135959386/7170b504-fcc2-4be0-a838-00026ff7972a)
+
+![image](https://github.com/nokoyy/glpi/assets/135959386/c53f6bb9-e140-4421-9227-dbe4383c1818)
+ 
+ L'IDENTIFIANT EST : administrator, mdp : P@ssword01
+
+
 
