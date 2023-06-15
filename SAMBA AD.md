@@ -47,7 +47,7 @@ dns-nameservers 127.0.0.1
 
 ![interfaces](https://github.com/nokoyy/glpi/assets/135959386/b5748323-be15-4bd4-a783-e501a231a961)
 
-[config graphique](https://github.com/nokoyy/glpi/assets/135959386/65c72bde-2515-43fc-b6e3-7af79a4ed512)
+![config graphique](https://github.com/nokoyy/glpi/assets/135959386/65c72bde-2515-43fc-b6e3-7af79a4ed512)
 
 ## Définir le hostname
 
