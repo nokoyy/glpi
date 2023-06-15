@@ -87,6 +87,8 @@ search infotrucs.lan
 
 nameserver 127.0.0.1
 
+![resolv conf](https://github.com/nokoyy/glpi/assets/135959386/cbc0e653-f119-4730-bb0c-555570b0526d)
+
 ## On passe en page suivante à l’installation de SAMBA.
 
 ```
