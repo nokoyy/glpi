@@ -45,9 +45,9 @@ gateway 192.168.0.1
 
 dns-nameservers 127.0.0.1
 
-file:///home/admin/Bureau/interfaces.png
+[config graphique](https://github.com/nokoyy/glpi/assets/135959386/65c72bde-2515-43fc-b6e3-7af79a4ed512)
 
-## Definir le hostname
+## Définir le hostname
 
 Il faut définir un nom d’hôte pour le serveur si ce n’est déjà fait. Pour cela éditer le fichier :
 ```
