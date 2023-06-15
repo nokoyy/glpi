@@ -1,5 +1,7 @@
 # Installer / configurer Samba en tant que controlleur de domaine sur Debian 11
-
+```
+https://www.infotrucs.fr/tuto-configurer-samba-4-sous-debian-11/
+```
 Pour commencer faites un "ip addr" dans le terminal et regarder 
 la configuration du port internet enp3s0 et garder son IP, car elle sera utile pour la suite.
 
