@@ -87,8 +87,11 @@ ip addr
 
 Exemple : 192.168.1.1/glpi
 
+![image](https://github.com/nokoyy/glpi/assets/135959386/abaf5502-d9cb-42da-a471-badf95aa253d)
 
 ![image](https://github.com/nokoyy/glpi/assets/135959386/559e5fcc-a007-4b11-a914-0ab7bdea17d3)
+
+![image](https://github.com/nokoyy/glpi/assets/135959386/3c1ff18e-1bb0-4e3f-b479-96d6faa9d51b)
 
 
 
