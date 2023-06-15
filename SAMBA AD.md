@@ -252,3 +252,9 @@ Warning: Your password will expire in 41 days on lun. 06 mai 2019 23:41:54 CEST
 –>L’authentification fonctionne.
 
 On va maintenant passer sur notre client Windows 10 afin de configurer son réseau, installer les outils RSAT et l’intégrer au domaine. Ce sera donc un poste qui permettra l’administration du serveur avec des outils graphiques.
+
+## Configuration réseau sur machine win10
+
+![image](https://github.com/nokoyy/glpi/assets/135959386/cb9851b1-3c3c-4b2d-be0a-c1a32ae0c322)
+ ( A CHANGER SUIVANT L'ADDRESSE IP, DNS ETC MAIS PRENDRE CETTE PHOTO COMME EXEMPLE)
+
